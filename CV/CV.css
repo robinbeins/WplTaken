@@ -10,6 +10,9 @@ body {
 .menu{
     padding: 1px;
     background-color: rgba(0,0,0,1);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
 .menu h1{
@@ -18,24 +21,26 @@ body {
     text-align: center;
     margin-left: 10px;
 }
-
+/*cv*/
 .section_cv{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: center;
     background-size: cover;
     background-image: url("../assets/DcA5LNq.gif");
 }
 
 #photo{
-    width: 300px;
+    display: flex;
+    width: 25%;
     padding: 1px;
     justify-content: left;
+
 }
 #photo img{
     height: auto;
     width: 270px;
-    margin: 15px 5px 15px 5px;
+    margin: 85px 5px 15px 5px;
     border-radius: 15px;
     transition: ease 0.3s;
     border: solid navajowhite 3px;
@@ -49,11 +54,14 @@ body {
 }
 
 .container_cv {
-    max-width: 800px;
-    margin-top: 15px;
+    display: flex;
+    width: 50%;
     padding: 20px;
     background-color: rgba(0,0,0, 0.5);
     border-radius: 10px;
+    margin-top: 85px;
+    margin-bottom: 25px;
+    flex-direction: column;
 }
 
 .who\? {
@@ -94,7 +102,224 @@ ul li {
     margin-bottom: 3px;
 }
 
+#whitespace{
+    width: 25%;
+}
+@media  screen and (max-width: 1250px){
+    #photo{
+        width: 100%;
+        justify-content: center;
+    }
+    .container_cv{
+        width: 100%;
+    }
+    .section_cv{
+        flex-direction: column;
+    }
+    #whitespace{
+        display: none;
+        width: 0;
+    }
 
+}
+/*motivatie*/
+.section_motivatie{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-size: cover;
+    background-color: plum;
+}
+#whitespace_motiv_l{
+    width: 15%;
+}
+.container_motivatie {
+    display: flex;
+    width: 70%;
+    padding: 20px;
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    flex-direction: column;
+}
+
+
+.motivatie_titel{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.motivatie_titel h1{
+    margin: 0;
+}
+
+.motivatie_text, .zelfreflectie_text, .pop_text{
+    margin-bottom: 30px;
+}
+
+.container_motivatie section {
+    transition: background-color 0.3s ease; cursor: pointer;
+}
+.container_motivatie section:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+/*projecten*/
+.section_projecten{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-size: cover;
+    background-color: azure;
+}
+
+.container_projecten{
+    display: flex;
+    width: 70%;
+    padding: 20px;
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    flex-direction: column;
+}
+.projecten{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.projecten h1{
+    margin: 0;
+}
+.csharp_project, .web_project, .portfolio_project{
+    margin-bottom: 30px;
+}
+.container_projecten section {
+    transition: background-color 0.3s ease; cursor: pointer;
+}
+.container_projecten section:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+h2 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+
+
+/*competenties*/
+.section_competenties{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-size: cover;
+    background-color: aquamarine;
+}
+#whitespace_comp_l{
+    width: 15%;
+}
+.container_competenties {
+    display: flex;
+    width: 70%;
+    padding: 20px;
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    flex-direction: column;
+}
+
+.comp_titel{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.comp_titel h1{
+    margin: 0;
+}
+
+.ontwerper, .programmeur, .tester, .communicator_teamspeler,.llip {
+    margin-bottom: 30px;
+}
+
+.container_competenties section {
+    transition: background-color 0.3s ease; cursor: pointer;
+}
+.container_competenties section:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 3px;
+}
+
+#whitespace_comp_r{
+    width: 15%;
+}
+@media  screen and (max-width: 1250px){
+    #whitespace_comp_l{
+        display: none;
+        width: 0;
+    }
+    .container_competenties{
+        width: 100%;
+    }
+    .section_competenties{
+        flex-direction: column;
+    }
+    #whitespace_comp_r{
+        display: none;
+        width: 0;
+    }
+
+}
+
+
+/*planning*/
+.section_planning{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-size: cover;
+    background-color: aqua;
+    }
+
+    .container_planning {
+        display: flex;
+        width: 60%;
+        padding: 20px;
+        background-color: rgba(0,0,0, 0.5);
+        border-radius: 10px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+@media  screen and (max-width: 1250px){
+
+    .container_planning{
+        width: 100%;
+    }
+    .section_planning{
+        flex-direction: column;
+    }
+
+
+}
 
 /*contact section */
 .section_contact {

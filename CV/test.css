@@ -99,3 +99,131 @@ nav li:hover .dropdown {
 .contact_forms button:hover {
     background-color: #45a049;
 }
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 3px;
+}
+
+.section_motivatie{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-size: cover;
+    background-color: aquamarine;
+}
+#whitespace_motiv_l{
+    width: 15%;
+}
+.container_motivatie {
+    display: flex;
+    width: 70%;
+    padding: 20px;
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    flex-direction: column;
+}
+
+.motivatie_titel{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.motivatie_titel h1{
+    margin: 0;
+}
+
+
+
+.motivatie_text{
+    margin-bottom: 30px;
+}
+
+.container_motivatie section {
+    transition: background-color 0.3s ease; cursor: pointer;
+}
+.container_motivatie section:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+
+.section_competenties{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-size: cover;
+    background-color: aquamarine;
+}
+#whitespace_comp_l{
+    width: 15%;
+}
+.container_competenties {
+    display: flex;
+    width: 70%;
+    padding: 20px;
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    flex-direction: column;
+}
+
+.comp_titel{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.comp_titel h1{
+    margin: 0;
+}
+
+
+
+.ontwerper, .programmeur, .tester, .communicator_teamspeler,.llip {
+    margin-bottom: 30px;
+}
+
+.container_competenties section {
+    transition: background-color 0.3s ease; cursor: pointer;
+}
+.container_competenties section:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+
+
+#whitespace_comp_r{
+    width: 15%;
+}
+@media  screen and (max-width: 1250px){
+    #whitespace_comp_l{
+        display: none;
+        width: 0;
+    }
+    .container_competenties{
+        width: 100%;
+    }
+    .section_competenties{
+        flex-direction: column;
+    }
+    #whitespace_comp_r{
+        display: none;
+        width: 0;
+    }
+
+}
